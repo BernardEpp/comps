@@ -5,7 +5,7 @@ function TablePage() {
     const config = [
         {
             label: "Fruits", 
-            render: (fruit) => fruit.name
+            render: (fruit) => fruit.name, 
         },
         {
             label: "Color", 
@@ -13,7 +13,8 @@ function TablePage() {
         },
         {
             label: "Score", 
-            render: (fruit) => fruit.score
+            render: (fruit) => fruit.score,
+            header: () => <th className="bg-red-500">Score</th>
         },
     ]
 
